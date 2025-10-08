@@ -1,0 +1,29 @@
+
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: php-app
+    volumes:
+      - ./src:/var/www/html
+    networks:
+      - lead_network
+  web:
+    image: nginx:alpine
+    container_name: nginx-web
+    ports:
+      - "80:80"
+    volumes:
+      - ./src:/var/www/html
+      - ./nginx/conf.d:/etc/nginx/conf.d
+    depends_on:
+      - app
+    networks:
+      - lead_network
+
+networks:
+  lead_network:
+    driver: bridge
