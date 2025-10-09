@@ -1,5 +1,5 @@
 const API_URL_ADD = "api/addlead";
-const API_URL_STATUS = "getstatuses";
+const API_URL_STATUS = "api/getstatuses";
 const STATIC_DATA = {
     box_id: 28,
     offer_id: 5,
