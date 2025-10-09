@@ -73,7 +73,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <header>
     <nav>
         <a href="index.php">Додати Лід</a> |
-        <a href="statuses.php">Переглянути Статуси</a>
+        <a href="src/statuses.php">Переглянути Статуси</a>
     </nav>
 </header>
 

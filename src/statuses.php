@@ -72,12 +72,12 @@ if ($response) {
 <head>
     <meta charset="UTF-8">
     <title>Сторінка 2: Статуси Лідів</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
 </head>
 <body>
 <header>
     <nav>
-        <a href="index.php">Додати Лід</a> |
+        <a href="../index.php">Додати Лід</a> |
         <a href="statuses.php">Переглянути Статуси</a>
     </nav>
 </header>
