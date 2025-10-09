@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Статуси лідів</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+    <a href="index.html">Додати лід</a>
+    <a href="statuses.html">Статуси лідів</a>
+</nav>
+<h1>Статуси лідів</h1>
+<form id="filterForm">
+    <label>Від: <input type="date" name="date_from"></label>
+    <label>До: <input type="date" name="date_to"></label>
+    <button type="submit">Фільтрувати</button>
+</form>
+<table id="statusesTable">
+    <thead>
+    <tr>
+        <th>ID</th>
+        <th>Email</th>
+        <th>Status</th>
+        <th>FTD</th>
+    </tr>
+    </thead>
+    <tbody></tbody>
+</table>
+<div id="statusesError"></div>
+<script src="script.js"></script>
+</body>
+</html>
